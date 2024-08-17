@@ -1,45 +1,356 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小米商城</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/42c594f3ce.js" crossorigin="anonymous"></script>
-    <style>
-        x* {
-            background-color: rgba(0, º, 0, 0.08);
-            box-shadow: inset 0 0 2px red;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米商城</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/42c594f3ce.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      background-color: rgba(0, º, 0, 0.08);
+      box-shadow: inset 0 0 2px red;
+    }
+  </style>
 </head>
-<body>
-  <div class = "w-full h-10 bg-[#333] text-xs">
+
+<body class="relative">
+  <div class="w-full h-10 bg-[#333] text-xs">
     <div class="w-[1226px] mx-auto h-10 flex text-[#b0b0b0] items-center">
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小米官网</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小米商城</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小米澎湃OS</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小米汽车</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">云服务</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">loT</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">有品</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小爱开放平台</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">资质证照</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">协议规则</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">下载app</a>
-        <a href="" class="mr-auto">Select Locaion</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小米官网</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小米商城</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小米澎湃OS</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小米汽车</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">云服务</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">loT</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">有品</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">小爱开放平台</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">资质证照</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">协议规则</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">下载app</a>
+      <a href="" class="mr-auto">Select Locaion</a>
 
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">登录</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">注册</a>
-        <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">消息通知</a>
-        <div href="" class="w-[120px] h-[40px] relative">
-            <i class="fa-solid fa-cart-shopping h-[40px] w-full leading-9 text-center bg-[#5c5a54] hover:bg-white hover:text-[#fc7b03]">购物车(0)</i>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">登录</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">注册</a>
+      <a href="" class="after:content-['|'] after:mx-[6px] after:text-[#424242]">消息通知</a>
+      <div href="" class="w-[120px] h-[40px] relative group">
+        <i
+          class="fa-solid fa-cart-shopping h-[40px] w-full leading-9 text-center bg-[#5c5a54] hover:bg-white hover:text-[#fc7b03]">购物车(0)</i>
 
-            <div class="w-[318px] h-[100px] float-right text-center leading-[100px] text-black ">
-                购物车中还没有商品， 赶紧选购吧！
-            </div>
+        <div
+          class="w-[318px]  float-right text-center leading-[100px] text-black h-0 overflow-hidden group-hover:h-[100px] duration-300 shadow-lg bg-white">
+          购物车中还没有商品， 赶紧选购吧！
         </div>
+      </div>
     </div>
-  </div> 
+  </div>
+  <div class="相对定位 ">
+    <div class="w-[1226px] h-[100px] mx-auto flex text-[16px]">
+      <img src="imags/xiaomi_logo.png" alt="This is a xiaomi logo!"
+        class="border-none h-[56px] my-auto inline-block mr-[180px]">
+      <div class="inline-block content-center px-[10px] group hover:text-[#fc7b03]">
+        <ul class="absolute flex inset-x-0 top-[140px] z-40 bg-white w-[1512px] h-0 group-hover:h-[190px] duration-300 group-hover:border-t shadow-md overflow-hidden text-[12px]">
+          <li href="" class="ml-[150px]"><img src="imags/Smart_phone.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Xiaomi MIX Fold 4</p>
+            <p class="text-center text-[#fc7b03]">8999元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/Smart_phone.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Xiaomi MIX Fold 4</p>
+            <p class="text-center text-[#fc7b03]">8999元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/Smart_phone.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Xiaomi MIX Fold 4</p>
+            <p class="text-center text-[#fc7b03]">8999元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/Smart_phone.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Xiaomi MIX Fold 4</p>
+            <p class="text-center text-[#fc7b03]">8999元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/Smart_phone.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Xiaomi MIX Fold 4</p>
+            <p class="text-center text-[#fc7b03]">8999元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span> 
+          <li href="" class=""><img src="imags/Smart_phone.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Xiaomi MIX Fold 4</p>
+            <p class="text-center text-[#fc7b03]">8999元</p>
+          </li>
+        </ul>
+        Xiaomi手机</div>
+      <div class="inline-block content-center px-[10px] group hover:text-[#fc7b03]">
+        <ul class="absolute flex inset-x-0 top-[140px] z-40 bg-white w-[1512px] h-0 group-hover:h-[190px] duration-300 group-hover:border-t shadow-md overflow-hidden text-[12px]">
+          <li href="" class="ml-[150px]"><img src="imags/Redmi.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi 13C 5G</p>
+            <p class="text-center text-[#fc7b03]">649元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/Redmi.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi 13C 5G</p>
+            <p class="text-center text-[#fc7b03]">649元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/Redmi.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi 13C 5G</p>
+            <p class="text-center text-[#fc7b03]">649元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/Redmi.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi 13C 5G</p>
+            <p class="text-center text-[#fc7b03]">649元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/Redmi.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi 13C 5G</p>
+            <p class="text-center text-[#fc7b03]">649元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span> 
+          <li href="" class=""><img src="imags/Redmi.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi 13C 5G</p>
+            <p class="text-center text-[#fc7b03]">649元起</p>
+          </li>
+        </ul>
+        Redmi手机</div>
+      <div class="group inline-block content-center px-[10px]  hover:text-[#fc7b03]">
+        <ul class="absolute flex inset-x-0 top-[140px] z-40 bg-white w-[1512px] h-0 group-hover:h-[190px] duration-300 group-hover:border-t shadow-md overflow-hidden text-[12px]">
+          <li href="" class="ml-[150px]"><img src="imags/tv.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米电视S系列</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/tv.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米电视S系列</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/tv.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米电视S系列</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/tv.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米电视S系列</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/tv.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米电视S系列</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span> 
+          <li href="" class=""><img src="imags/tv.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米电视S系列</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+        </ul>
+        电视</div>
+      <div class="group inline-block content-center px-[10px] hover:text-[#fc7b03]">
+        <ul class="absolute flex inset-x-0 top-[140px] z-40 bg-white w-[1512px] h-0 group-hover:h-[190px] duration-300 group-hover:border-t shadow-md overflow-hidden text-[12px]">
+          <li href="" class="ml-[150px]"><img src="imags/pc.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Book 16 2024</p>
+            <p class="text-center text-[#fc7b03]">3699元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/pc.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Book 16 2024</p>
+            <p class="text-center text-[#fc7b03]">3699元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/pc.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Book 16 2024</p>
+            <p class="text-center text-[#fc7b03]">3699元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/pc.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Book 16 2024</p>
+            <p class="text-center text-[#fc7b03]">3699元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/pc.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Book 16 2024</p>
+            <p class="text-center text-[#fc7b03]">3699元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span> 
+          <li href="" class=""><img src="imags/pc.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Book 16 2024</p>
+            <p class="text-center text-[#fc7b03]">3699元起</p>
+          </li>
+        </ul>
+        笔记本</div>
+      <div class="group inline-block content-center px-[10px] hover:text-[#fc7b03]">
+        <ul class="absolute flex inset-x-0 top-[140px] z-40 bg-white w-[1512px] h-0 group-hover:h-[190px] duration-300 group-hover:border-t shadow-md overflow-hidden text-[12px]">
+          <li href="" class="ml-[150px]"><img src="imags/pad.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Pad SE</p>
+            <p class="text-center text-[#fc7b03]">849元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/pad.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Pad SE</p>
+            <p class="text-center text-[#fc7b03]">849元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/pad.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Pad SE</p>
+            <p class="text-center text-[#fc7b03]">849元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/pad.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Pad SE</p>
+            <p class="text-center text-[#fc7b03]">849元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/pad.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Pad SE</p>
+            <p class="text-center text-[#fc7b03]">849元起</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span> 
+          <li href="" class=""><img src="imags/pad.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">Redmi Pad SE</p>
+            <p class="text-center text-[#fc7b03]">849元起</p>
+          </li>
+        </ul>
+
+        平板</div>
+      <div class="group inline-block content-center px-[10px] hover:text-[#fc7b03]">
+        <ul class="absolute flex inset-x-0 top-[140px] z-40 bg-white w-[1512px] h-0 group-hover:h-[190px] duration-300 group-hover:border-t shadow-md overflow-hidden text-[12px]">
+          <li href="" class="ml-[150px]"><img src="imags/dryer.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米烘干机</p>
+            <p class="text-center text-[#fc7b03]">2999元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/dryer.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米烘干机</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/dryer.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米烘干机</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/dryer.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米烘干机</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/dryer.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米烘干机</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span> 
+          <li href="" class=""><img src="imags/dryer.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">小米烘干机</p>
+            <p class="text-center text-[#fc7b03]">2799元</p>
+          </li>
+        </ul>
+
+        家电</div>
+      <div class="group inline-block content-center px-[10px] hover:text-[#fc7b03]">
+        <ul class="absolute flex inset-x-0 top-[140px] z-40 bg-white w-[1512px] h-0 group-hover:h-[190px] duration-300 group-hover:border-t shadow-md overflow-hidden text-[12px]">
+          <li href="" class="ml-[150px]"><img src="imags/router.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">路由器</p>
+            <p class="text-center text-[#fc7b03]">799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/router.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">路由器</p>
+            <p class="text-center text-[#fc7b03]">799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/router.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">路由器</p>
+            <p class="text-center text-[#fc7b03]">799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/router.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">路由器</p>
+            <p class="text-center text-[#fc7b03]">799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span>
+          <li href="" class=""><img src="imags/router.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">路由器</p>
+            <p class="text-center text-[#fc7b03]">799元</p>
+          </li>
+          <span class="border-[#e0e0e0] border-x h-[100px] mx-[10px] mt-[20px] text-black"></span> 
+          <li href="" class=""><img src="imags/router.webp" alt="This li xiaomi phone!"
+              class="w-[160px] h-[110px]">
+            <p class="text-center mt-[20px] text-black">路由器</p>
+            <p class="text-center text-[#fc7b03]">799元</p>
+          </li>
+        </ul>
+
+        路由器</div>
+      <div class="inline-block content-center px-[10px] hover:text-[#fc7b03]">服务中心</div>
+      <div class="inline-block content-center px-[10px] hover:text-[#fc7b03]">社区</div>
+      <input type="text" placeholder="Search what you want!" class="w-[245px] h-[50px] my-[24px] ml-auto border">
+      <button class="border h-[50px] w-[56px] my-[24px] hover:bg-[#fc7b03]"><img src="imags/search_button.png"
+          alt="This is a magnifier!" class="w-[20px] text-black inline-block "></button>
+    </div>
+
+  </div>
+  <div class="w-[1226px] h-[460px] mx-auto flex relative">
+      <ul class="absolute">
+        <li>手机</li>
+        <li>电视</li>
+        <li>家电</li>
+        <li>笔记本 平板 显示器</li>
+        <li>出行 穿戴</li>
+        <li>耳机 音响</li>
+        <li>健康 儿童</li>
+        <li>生活 箱包</li>
+        <li>智能 路由器</li>
+        <li>电源 配件</li>
+      </ul>
+    <div class="w-[1226px] h-[460px]">
+      <img src="imags/slide/lock.webp" alt="" class="w-[1226px] h-[460px]">
+    </div>
+  </div>
+
 </body>
+
 </html>
