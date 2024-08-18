@@ -1,0 +1,32 @@
+* {
+    background-color: rgba(0, º, 0, 0.08);
+    box-shadow: inset 0 0 2px red;
+  }
+
+  .sideBar {
+    background-color: rgba(105, 101, 101, .6);
+  }
+
+  #r1:checked ~ .s1 {
+    margin-left: 0;
+  }
+
+  #r2:checked ~ .s2 {
+    margin-left: -10%;
+  }
+
+  #r3:checked ~ .s3 {
+    margin-left: -20%;
+  }
+
+  #r4:checked ~ .s4 {
+    margin-left: 0;
+  }
+
+  #r5:checked ~ .s5 {
+    margin-left: 0;
+  }
+  
+  #r6:checked ~ .s6 {
+    margin-left: 0;
+  }
